@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('images/fondo_pokemon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloque_fondo{
+    background-color: #FFF8F2;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    width: 90em;
+    height: 55em;
+    align-self: center;
+    margin-left: 2em;
+    gap: 1em;
+}
+
+
+.bloque_derecho{
+    background-color: #FCF3E4;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: #332011;
+    align-self: baseline;
+    border-radius: 20px;
+    width: 30em;
+    height: 40em;
+    margin-top: 6em;
+    align-self: center;
+    display: flex;
+    flex-direction:column;
+    gap:0.2em;
+}
+
+.bloque_maquina{
+    background-image: url('images/fondo_maquina.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40em;
+    max-height: 52em;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.grid_elementos{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap:0.3em;
+    padding-top: 9em;
+    padding-left: 2.5em;
+    width: 90%;
+    height: 60%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.elementos{
+    align-self: baseline;
+    border-radius: 0.5em;
+    width: 8em;
+    height: 8em;
+}
+
+.recoge_elemento{
+    background-color: #C5915D;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #332011;
+    align-self: baseline;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 25em;
+    height: 5em;
+    margin-left: 7.5em ;
+}
+
+.bloques_elementos{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.numero_elementos{
+    justify-content: center;
+    text-align: center;
+    background-color: #332011;
+    color: white;
+    width: 3em;
+    border-radius: 0.2em;
+    padding: 0.1em;
+    margin-right: 0.6em;
+}
+
+#elemento1{
+    background-image: url(images/grid_producto1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento2{
+    background-image: url(images/grid_producto2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento3{
+    background-image: url(images/grid_producto3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento4{
+    background-image: url(images/grid_producto4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#elemento5{
+    background-image: url(images/grid_producto5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento6{
+    background-image: url(images/grid_producto6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento7{
+    background-image: url(images/grid_producto7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento8{
+    background-image: url(images/grid_producto8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#elemento9{
+    background-image: url(images/grid_producto9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento10{
+    background-image: url(images/grid_producto10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento11{
+    background-image: url(images/grid_producto11.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elemento12{
+    background-image: url(images/grid_producto12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pantalla_info{
+    background-color: #C5915D;
+    color:white;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #332011;
+    align-self: baseline;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 25em;
+    height: 4em;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.pantalla_interactiva{
+    display:flex;
+    flex-direction:row;
+    gap:0.3em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.pantalla_izq{
+    width: 20em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+}
+
+.pantalla_num{
+    background-color: #C5915D;
+    color:white;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #332011;
+    align-self: baseline;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 18em;
+    height: 5em;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid_teclado{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap:0.1em;
+    padding-top: 2em;
+    padding-left: 3.5em;
+    width: 70%;
+    height: 60%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccion_admin{
+    background-image: url(images/modo_admin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+}
+
+.pantalla_der{
+    width: 8em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    padding-left: 1em;
+}
+
+.teclas{
+    background-color: #332011;
+    border-radius: 0.5em;
+    width: 3.5em;
+    height: 3.5em;
+    color: white;
+}
+
+
+.meter_dinero{
+    background-image: url(images/dinero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8em;
+    height: 8em;
+    margin-top: 6em;
+    margin-left: 1.2em;
+    cursor: pointer;
+}
+
+.devolver_dinero{
+    background-color: #C5915D;
+    color:white;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #332011;
+    align-self: baseline;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: 6em;
+    height: 6em;
+}
+
+.icono_teclado1{
+    background-image: url(images/Arrow_left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 2em;
+}
+
+.icono_teclado2{
+    background-image: url(images/Check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 2em;
+}
+
+.teclas_iconos{
+    display:flex; 
+    background-color: #332011;
+    border-radius: 0.5em;
+    width: 3.5em;
+    height: 3.5em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+}
+
+.general_monedas{
+    z-index: 2;
+    position: fixed;
+    background-color: #00000066;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ventana_monedas{
+    background-color: white;
+    width: 70em;
+    height: 45em;
+    border-radius: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+.logo{
+    background-image: url(images/logo_maquina.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 6em;
+    height: 4em;
+}
+
